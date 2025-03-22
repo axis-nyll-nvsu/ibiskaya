@@ -9,4 +9,8 @@ class Resident extends Model
 {
     /** @use HasFactory<\Database\Factories\ResidentFactory> */
     use HasFactory;
+
+    public function barangay() {
+        return $this->belongsTo(Barangay::class);
+    }
 }

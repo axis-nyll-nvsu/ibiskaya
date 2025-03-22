@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('residents', function (Blueprint $table) {
             $table->id();
+            $table->integer('barangay_id');
+            $table->string('first_name');
+            $table->string('middle_name')->nullable();
+            $table->string('last_name');
+            $table->string('suffix')->nullable();
+            $table->string('gender'); // Male or Female
+            $table->dateTime('birth_date');
+            $table->string('birth_place');
+            $table->string('civil_status'); // Single, Married, Widowed, Separated (X), or Divorced
+            $table->string('nationality');
             $table->timestamps();
         });
     }
