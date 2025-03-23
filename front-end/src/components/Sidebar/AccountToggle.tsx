@@ -2,8 +2,8 @@ import { LuChevronsUpDown } from "react-icons/lu";
 
 const AccountToggle = () => {
     return (
-        <div className="border-b mb-2 mt-2 pb-2 border-stone-300">
-            <button className="flex p-2 hover:bg-stone-200 rounded transition-colors relative gap-2 w-full items-center">
+        <div className="border-b mb-2 pb-2 border-stone-200">
+            <button className="flex p-2 hover:bg-stone-100 rounded transition-colors relative gap-2 w-full items-center">
                 <img
                     src="https://api.dicebear.com/9.x/fun-emoji/svg?seed=Alexander"
                     alt="avatar"

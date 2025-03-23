@@ -1,16 +1,14 @@
 import AccountToggle from "./AccountToggle";
 import Searchbar from "./Searchbar";
+import Menu from "./Menu";
 
 const Sidebar = () => {
     return (
         <div>
-            <div className="sticky relative top-6 h-[calc(100vh-32px)]">
+            <div className="relative sticky top-2 bg-white border-1 border-stone-200 rounded-lg p-2 h-[calc(100vh-20px)] shadow">
                 <AccountToggle />
                 <Searchbar />
-                <div>
-                    {/* TODO: Menu */}
-                    Menu
-                </div>
+                <Menu />
                 <div className="absolute bottom-2">
                     {/* TODO: Settings */}
                     Settings
